@@ -67,7 +67,7 @@ html, body {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     box-shadow: inset 1px 1px 0 white;
-    max-height: 450px;
+    max-height: 550px;
 }
   
   
@@ -116,20 +116,7 @@ html, body {
     box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
   }
   
-  #notebooks span {
-    /* Initial styles */
-    display: block;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.5); /* White color with 50% opacity */
-    bottom: -35px;
-    left: -1px;
-    width: 450px; /* Initial width */
-    border-radius: 0 0 5px 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
-}
+  
 
   
   #notebooks select {
