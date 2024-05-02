@@ -18,7 +18,12 @@
     </head>
     <body>
         
-        <h1>My Songlist</h1>
+        <div class="container">
+            <h1>My Songlist</h1>
+            <div class="center">
+                <a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Send In A Request</a>
+            </div>
+        </div>
         
         <div id="notebooks" ng-app="notebooks" ng-controller="NotebookListCtrl">
             <input type="text" id="query" ng-model="query" placeholder="Search Artist or Song"/>
@@ -27,8 +32,10 @@
               <li ng-repeat="notebook in notebooks | filter:query | orderBy: orderList">
                 Song: {{notebook.name}}<br/>
                 Artist: {{notebook.procesor}}<br/>
-                <div class="right top"><a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target="#basicModal">Request Me</a></div>
+                
               </li>
+
+              
             </ul>
             <span>Number of songs: {{notebooks.length}}</span>
           </div>
