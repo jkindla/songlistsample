@@ -23,10 +23,8 @@ html, body {
 
     background-image: url('pictures/Untitled-4.png');
     /* You can specify other background properties like position, size, and repeat */
-    background-size: cover; /* Adjusts the size of the background image to cover the entire element */
-    background-position: center; /* Positions the background image at the center */
-    /* You can add more properties as needed */
-
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
   }
 
 
@@ -48,19 +46,19 @@ html, body {
   }
   
   #notebooks {
+    /* Initial styles */
     background: white;
     position: absolute;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -225px; /* This margin keeps it centered initially */
     margin-top: 35px;
-    width: 420px;
+    width: 450px; /* Initial width */
     padding: 15px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     box-shadow: inset 1px 1px 0 white;
     max-height: 450px;
-  }
-
+}
   
   
   ul {
@@ -93,6 +91,8 @@ html, body {
     cursor: pointer;
     border-radius: 3px;
   }
+
+ 
   
   #query {
     width: 100%;
@@ -107,18 +107,20 @@ html, body {
   }
   
   #notebooks span {
+    /* Initial styles */
     display: block;
     position: absolute;
     background: white;
     bottom: -35px;
     left: -1px;
-    width: 420px;
+    width: 450px; /* Initial width */
     border-radius: 0 0 5px 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
-  }
+}
+
   
   #notebooks select {
     width: 120px;
@@ -141,3 +143,30 @@ html, body {
   .modaltitle {
     text-align: center;
   }
+
+
+  @media (max-width: 768px) {
+    #notebooks {
+        width: 65%; /* Adjust the width for screens smaller than 768px */
+        margin-left: -32.5%; /* Center horizontally at smaller screen sizes */
+    }
+}
+
+@media (max-width: 480px) {
+    #notebooks {
+        width: 70%; /* Adjust the width for screens smaller than 480px */
+        margin-left: -35%; /* Center horizontally at smaller screen sizes */
+    }
+}
+
+@media (max-width: 768px) {
+    #notebooks span {
+        width: 100%; /* Adjust the width for screens smaller than 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    #notebooks span {
+        width: 70%; /* Adjust the width for screens smaller than 480px */
+    }
+}
