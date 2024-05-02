@@ -25,6 +25,7 @@ html, body {
     /* You can specify other background properties like position, size, and repeat */
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
+    overflow: hidden;
   }
 
 
